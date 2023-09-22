@@ -82,8 +82,14 @@ function makeActive() {
         const box = section.getBoundingClientRect();
         if (box.top <= 150 && box.bottom >= 150) {
             section.classList.add('your-active-class');
+            const sectionId = section.id;
+            const navLink = document.querySelector(`.menu__link[href='#${sectionId}']`);
+            navLink.classList.add('active');
         } else {
             section.classList.remove('your-active-class');
+            const sectionId = section.id;
+            const navLink = document.querySelector(`.menu__link[href='#${sectionId}']`);
+            navLink.classList.remove('active');
         }
     }
 }
@@ -146,7 +152,5 @@ scrollToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
-
-// Set sections as active
 
 
