@@ -16,6 +16,7 @@ body {
     margin: 0;
     font-family: 'Merriweather', serif;
     color: #fff;
+    font-size: 16px;
 }
 
 
@@ -47,7 +48,13 @@ p {
 
 /* ---- Layout Rules ---- */
 main {
-    margin: 10vh 1em 10vh;
+    margin: 10vh 4em;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        margin: 10vh 4em;
+    }
 }
 
 .main__hero {
@@ -67,7 +74,7 @@ section {
 .navbar__menu ul {
     padding-left: 0;
     margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 .navbar__menu li {
@@ -110,6 +117,8 @@ section {
     top: 0;
     width: 100%;
     z-index: 5;
+    display: flex;
+    justify-content: center;
 }
 
 /* Footer Styles */
@@ -131,10 +140,10 @@ section {
     text-align: left;
 }
 
-@media only screen and (min-width: 35em){
+@media only screen and (min-width: 768px) {
     .landing__container {
         max-width: 50em;
-        padding: 4em;
+        padding: 2em;
     }
 }
 

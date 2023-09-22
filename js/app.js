@@ -48,10 +48,15 @@ function createNavigationMenu() {
     sections.forEach((section) => {
         const sectionId = section.id;
         const sectionTitle = section.dataset.nav;
-// Add listed item to the unordered list
+// Add the variable 'naveItem' to the unordered list variable 'navList'.
         const navItem = document.createElement('li');
         navItem.innerHTML = `<a class='menu__link' href='#${sectionId}'>${sectionTitle}</a>`;
-// Add the unordered list to the navbar
+// When the section's heading is clicked on, it will collapse, which will hide or show its content
+        const sectionHeading = section.querySelector('h2');
+        sectionHeading.addEventListener('click', () => {
+            section.classList.toggle('collapsed');
+        });
+// Add the navItem from within the unordered list to the navbar
         navbarList.appendChild(navItem);
     });
     navbarList.appendChild(navList);
