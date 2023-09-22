@@ -1,9 +1,20 @@
 # Landing Page Project
 
-## Instructions
+**Project Description:**
+This is the final full project of the FEND course.
+The Landing Page Project uses all the knowledge learned
+from HTML, CSS and JavaScript courses by turning a static page into an interactive one.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+**Project Usage:**
+The *first* usage is the HTML from the index.html file.
+The file shows the content from the main, the body, sections and footer.
 
-To get started, open `js/app.js` and start building out the app's functionality
+The *second* usage is the CSS from the styles.css file.
+The file shows the presentation of the content by adding styles and classes.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+The *third* usage is the JavaScript from the app.js file.
+The file displays the interactivity by way of functions and variables created.
+
+**Project Dependencies:**
+
+No dependencies used based from the app.js file.
